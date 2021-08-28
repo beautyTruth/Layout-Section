@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,22 +15,8 @@ nav {
   text-align: center;
 }
 
-.colors {
-  font-size: 0;
-}
-
-.color {
-  color: antiquewhite;
-  background-color: blueviolet;
-  height: 40px;
-  width: 40px;
-  display: inline-block;
-  transform: rotate(20deg);
-  z-index: 2000;
-}
-
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -61,8 +48,7 @@ aside {
   background-color: #f7f7f7;
   border: 5px solid #0e56ae;
   border-radius: 15px;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 h1,
@@ -94,6 +80,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -141,6 +128,7 @@ li:nth-child(last) {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 body {
@@ -228,7 +216,6 @@ footer p {
 }
 
 nav a:link {
-  background-color: blueviolet;
   margin-right: 30px;
   margin-top: 15px;
   display: inline-block;
@@ -287,4 +274,52 @@ h2::after {
   transform: rotate(20deg);
   z-index: 2000;
   text-align: center;
+}
+
+/* float work */
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+
+  width: 825px;
+  float: left;
+}
+
+aside {
+
+  width: 300px;
+  float: right;
+}
+
+footer {
+
+  clear: both;
 }
